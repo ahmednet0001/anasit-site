@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ANSIT | تصميم مواقع وإيميلات رسمية وحلول تكنولوجيا المعلومات</title>
+<meta name="description" content="ANSIT (Anas Information Technology) شركة خدمات تكنولوجيا معلومات: تصميم مواقع، إيميلات رسمية للشركات، وصاحبة منصة sharit.click لإنشاء المتاجر الصغيرة.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta property="og:title" content="ANSIT | Anas Information Technology">
+<meta property="og:description" content="تصميم مواقع، إيميلات رسمية، ومنصة sharit.click لإنشاء المتاجر الصغيرة.">
+<meta property="og:image" content="assets/logo-full.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Readex+Pro:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#121b2b;--navy2:#1b2a42;--blue:#2a63f0;--blue-d:#1e4fcc;--sky:#eaf0fe;--bg:#f5f7fb;--line:#dbe3f0;--muted:#55657d;--ok:#12805c;--err:#b3261e}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:"IBM Plex Sans Arabic",Tahoma,sans-serif;color:var(--navy);background:#fff;line-height:1.85;font-size:17px}
+h1,h2,h3{font-family:"Readex Pro","IBM Plex Sans Arabic",Tahoma,sans-serif;line-height:1.4}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:22px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:34px;width:auto}
+.brand .w{height:26px}
+nav{display:flex;gap:26px;align-items:center}
+nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--navy2)}
+nav a:hover{color:var(--blue)}
+.btn{display:inline-block;background:var(--blue);color:#fff;font:600 16px "IBM Plex Sans Arabic",sans-serif;padding:11px 24px;border-radius:8px;border:0;text-decoration:none;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--blue-d)}
+.btn.ghost{background:transparent;color:var(--navy);border:1.5px solid var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+.hero{background:linear-gradient(180deg,var(--sky),#fff);padding:72px 0 80px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(30px,4.6vw,50px);font-weight:700;margin-bottom:18px}
+.hero p{color:var(--muted);max-width:50ch;font-size:18px;margin-bottom:28px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.art{position:relative}
+.art img{width:100%;max-width:400px;margin-inline:auto;filter:drop-shadow(0 24px 30px rgba(42,99,240,.22))}
+.trust{border-block:1px solid var(--line);background:#fff}
+.trust .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 28px;padding-block:18px;font-weight:500;font-size:15px;color:var(--navy2)}
+.trust span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--blue);margin-inline-end:10px}
+section{padding:84px 0}
+.head{max-width:640px;margin-bottom:40px}
+.head h2{font-size:clamp(25px,3.4vw,34px);margin-bottom:10px}
+.head p{color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{border:1px solid var(--line);border-radius:14px;padding:28px;background:#fff;transition:border-color .15s,box-shadow .15s}
+.svc:hover{border-color:var(--blue);box-shadow:0 12px 30px rgba(42,99,240,.1)}
+.ic{width:48px;height:48px;border-radius:12px;background:var(--sky);display:grid;place-items:center;margin-bottom:16px}
+.ic svg{width:26px;height:26px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.svc h3{font-size:20px;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:16px}
+.svc ul{list-style:none;padding:0;margin-top:14px;font-size:15px}
+.svc li{padding:5px 0;border-top:1px solid var(--line)}
+.shar{background:var(--navy);color:#fff}
+.shar .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.shar h2{font-size:clamp(25px,3.4vw,34px);margin-bottom:12px}
+.shar p{color:#b8c6dc;margin-bottom:20px}
+.shar ul{list-style:none;padding:0;margin-bottom:26px}
+.shar li{padding:9px 0;border-bottom:1px solid #2a3a55}
+.shar li::before{content:"✓";color:#6f9bff;font-weight:700;margin-inline-end:12px}
+.shar .btn{background:#fff;color:var(--navy)}
+.shar .btn:hover{background:var(--sky)}
+.mock{background:var(--navy2);border:1px solid #2f4263;border-radius:14px;padding:18px;direction:ltr}
+.mock .top{display:flex;gap:6px;margin-bottom:14px}
+.mock .top i{width:10px;height:10px;border-radius:50%;background:#3b4f72}
+.mock .url{background:var(--navy);border-radius:6px;padding:6px 12px;font-size:14px;color:#9db0cc;margin-bottom:16px}
+.mock .row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.mock .p{background:#27395a;border-radius:10px;height:92px;position:relative}
+.mock .p:nth-child(2){background:var(--blue)}
+.mock .p::after{content:"";position:absolute;inset:auto 10px 10px;height:8px;border-radius:4px;background:rgba(255,255,255,.28)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{border-top:3px solid var(--blue);padding-top:18px}
+.step::before{counter-increment:s;content:counter(s);display:block;font:700 28px "Readex Pro",sans-serif;color:var(--blue);margin-bottom:4px}
+.step h3{font-size:18px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+.light{background:var(--bg)}
+.contact{background:var(--navy);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.contact h2{font-size:clamp(26px,3.6vw,36px);margin-bottom:12px}
+.contact .info p{color:#b8c6dc;margin-bottom:18px;max-width:42ch}
+.contact .info img{height:56px;width:auto;margin-bottom:26px}
+.contact .pts{list-style:none;padding:0}
+.contact .pts li{padding:7px 0;color:#dbe5f5}
+.contact .pts li::before{content:"";display:inline-block;width:8px;height:8px;border-radius:2px;background:#6f9bff;margin-inline-end:12px}
+.card{background:#fff;color:var(--navy);border-radius:16px;padding:32px;box-shadow:0 24px 50px rgba(0,0,0,.3)}
+.card h3{font-size:22px;margin-bottom:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-weight:500;font-size:15px;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;padding:11px 13px;border:1px solid #b9c7dc;border-radius:8px;background:#fff;color:var(--navy);margin-bottom:14px}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid #bcd0fb;border-color:var(--blue)}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.card .btn{width:100%;padding:13px;font-size:17px}
+.card .btn[disabled]{opacity:.6;cursor:wait}
+#status{margin-top:12px;font-size:15px;min-height:26px}
+#status.ok{color:var(--ok)}#status.err{color:var(--err)}
+footer{background:#0c1422;color:#9db0cc;padding:34px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+footer img{height:34px;width:auto}
+footer a{color:#fff}
+@media(max-width:860px){
+ .hero .wrap,.shar .wrap,.contact .wrap{grid-template-columns:1fr}
+ .grid3{grid-template-columns:1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .art{display:none}
+ nav a:not(.btn){display:none}
+ section{padding:56px 0}
+ .hero{padding:48px 0 56px}
+}
+@media(max-width:520px){.two{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.brand .w{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+ <a class="brand" href="#top" aria-label="ANSIT الصفحة الرئيسية"><img src="assets/icon.png" alt=""><img class="w" src="assets/wordmark.png" alt="ANSIT"></a>
+ <nav><a href="#services">خدماتنا</a><a href="#sharit">منصة sharit</a><a href="#process">طريقة العمل</a><a class="btn" href="#contact">اتصل بنا</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+ <div>
+  <h1>حلول تكنولوجيا المعلومات لشركتك، من الموقع إلى الإيميل إلى المتجر</h1>
+  <p>ANSIT شركة مصرية متخصصة في تصميم المواقع وإعداد الإيميلات الرسمية، وصاحبة منصة sharit.click اللي بتخليك تفتح متجرك الصغير بنفسك.</p>
+  <div class="cta"><a class="btn" href="#contact">ابدأ مشروعك</a><a class="btn ghost" href="#services">شوف خدماتنا</a></div>
+ </div>
+ <div class="art" aria-hidden="true"><img src="assets/icon.png" alt=""></div>
+</div></div>
+
+<div class="trust"><div class="wrap"><span>تصميم مواقع احترافية</span><span>إيميلات رسمية باسم شركتك</span><span>متاجر إلكترونية صغيرة</span><span>دعم فني بعد التسليم</span></div></div>
+
+<section id="services"><div class="wrap">
+ <div class="head"><h2>خدماتنا</h2><p>خدمات واضحة ومحددة، تغطي كل اللي تحتاجه عشان يكون لك حضور محترف على الإنترنت.</p></div>
+ <div class="grid3">
+  <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+   <h3>تصميم المواقع</h3><p>موقع سريع ومتوافق مع الموبايل، يعرّف عملاءك بشغلك ويسهّل التواصل معاك.</p>
+   <ul><li>مواقع تعريفية للشركات</li><li>صفحات هبوط للإعلانات</li><li>ربط الدومين والاستضافة</li></ul></div>
+  <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+   <h3>الإيميلات الرسمية</h3><p>إيميلات باسم دومين شركتك، مثل name@yourcompany.com، تدي انطباع أكثر ثقة.</p>
+   <ul><li>إنشاء الحسابات وإعدادها</li><li>ضبط الإعدادات لتقليل الوصول إلى السبام</li><li>ربطها بالموبايل والكمبيوتر</li></ul></div>
+  <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 8h16l-1.5 11a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 8Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg></div>
+   <h3>متاجر sharit.click</h3><p>منصتنا لإنشاء متجر صغير تعرض فيه منتجاتك وتستقبل طلبات عملائك.</p>
+   <ul><li>إنشاء المتجر بدون برمجة</li><li>عرض المنتجات والأسعار</li><li>رابط مباشر تشاركه مع عملائك</li></ul></div>
+ </div>
+</div></section>
+
+<section class="shar" id="sharit"><div class="wrap">
+ <div>
+  <h2>sharit.click: افتح متجرك الصغير بنفسك</h2>
+  <p>منصة من تطوير ANSIT لأي حد عايز يبيع أونلاين من غير تعقيد أو خبرة برمجة.</p>
+  <ul><li>أنشئ متجرك في خطوات بسيطة</li><li>أضف منتجاتك وصورها وأسعارها</li><li>شارك رابط المتجر على واتساب والسوشيال ميديا</li></ul>
+  <a class="btn" href="https://sharit.click" target="_blank" rel="noopener">زيارة sharit.click</a>
+ </div>
+ <div class="mock" aria-hidden="true">
+  <div class="top"><i></i><i></i><i></i></div>
+  <div class="url">https://shatir.click/store/shatir@q8iauctu</div>
+  <div class="row"><div class="p"></div><div class="p"></div><div class="p"></div></div>
+ </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+ <div class="head"><h2>إزاي بنشتغل معاك</h2><p>أربع خطوات بسيطة من أول رسالة لحد التسليم.</p></div>
+ <div class="steps">
+  <div class="step"><h3>تواصل</h3><p>ترسل لنا طلبك من الفورم، ونرد عليك لنفهم احتياجك.</p></div>
+  <div class="step"><h3>اتفاق</h3><p>نحدد معاك المطلوب والمدة والتكلفة قبل ما نبدأ.</p></div>
+  <div class="step"><h3>تنفيذ</h3><p>نصمم وننفذ، وتراجع معانا الشغل أول بأول.</p></div>
+  <div class="step"><h3>تسليم ودعم</h3><p>نسلمك الشغل جاهز، ونفضل متاحين لأي استفسار.</p></div>
+ </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+ <div class="info">
+  <img src="assets/logo-light.png" alt="ANSIT">
+  <h2>اتصل بنا</h2>
+  <p>ابعتلنا فكرتك أو استفسارك، وهنرد عليك بأنسب حل في أقرب وقت.</p>
+  <ul class="pts"><li>تصميم موقع لشركتك أو نشاطك</li><li>إيميلات رسمية باسم الدومين</li><li>فتح متجر على sharit.click</li></ul>
+ </div>
+ <div class="card">
+  <h3>أرسل لنا رسالة</h3>
+  <form id="f" novalidate>
+   <div class="hp" aria-hidden="true"><label>لا تملأ هذا الحقل<input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+   <div class="two">
+    <div><label for="name">الاسم</label><input id="name" name="name" required autocomplete="name"></div>
+    <div><label for="phone">رقم الموبايل (اختياري)</label><input id="phone" name="phone" type="tel" autocomplete="tel" dir="ltr" style="text-align:right"></div>
+   </div>
+   <label for="email">البريد الإلكتروني</label>
+   <input id="email" name="email" type="email" required autocomplete="email" dir="ltr" style="text-align:right">
+   <label for="service">الخدمة المطلوبة</label>
+   <select id="service" name="service">
+    <option>تصميم موقع</option><option>إيميلات رسمية للشركة</option><option>متجر على sharit.click</option><option>استفسار آخر</option>
+   </select>
+   <label for="msg">رسالتك</label>
+   <textarea id="msg" name="message" required></textarea>
+   <button class="btn" id="send" type="submit">أرسل الرسالة</button>
+   <div id="status" role="status" aria-live="polite"></div>
+  </form>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <img src="assets/logo-light.png" alt="ANSIT">
+ <span>© <span id="y"></span> ANSIT (Anas Information Technology). جميع الحقوق محفوظة.</span>
+ <a href="https://sharit.click" target="_blank" rel="noopener">sharit.click</a>
+</div></footer>
+
+<script>
+document.getElementById("y").textContent=new Date().getFullYear();
+// استبدل YOUR_FORM_ID بالمعرّف الذي تحصل عليه من Formspree
+const ENDPOINT="https://formspree.io/f/xvkkwnlr";
+const f=document.getElementById("f"),st=document.getElementById("status"),btn=document.getElementById("send");
+function msg(t,c){st.textContent=t;st.className=c}
+f.addEventListener("submit",async e=>{
+ e.preventDefault();
+ if(!f.name.value.trim()||!f.email.validity.valid||!f.message.value.trim()){msg("من فضلك اكتب الاسم وبريد إلكتروني صحيح ورسالتك.","err");return}
+ btn.disabled=true;msg("جاري الإرسال...","");
+ try{
+  const r=await fetch(ENDPOINT,{method:"POST",headers:{"Accept":"application/json"},body:new FormData(f)});
+  if(r.ok){f.reset();msg("وصلتنا رسالتك. هنرد عليك قريبًا.","ok")}
+  else{msg("تعذر إرسال الرسالة. جرّب مرة أخرى بعد قليل.","err")}
+ }catch(_){msg("حدث خطأ في الاتصال. تأكد من الإنترنت وحاول مرة أخرى.","err")}
+ btn.disabled=false;
+});
+</script>
+</body>
+</html>
